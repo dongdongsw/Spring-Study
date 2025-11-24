@@ -1,0 +1,11 @@
+package com.sist.main3;
+
+import java.util.Map;
+
+public class ApplicationContext {
+	private Map  clsMap = new HashMap();
+	public ApplicationContext() {
+		
+		
+	}
+}

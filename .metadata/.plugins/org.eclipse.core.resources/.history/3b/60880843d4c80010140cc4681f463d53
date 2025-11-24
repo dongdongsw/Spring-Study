@@ -1,0 +1,14 @@
+package com.sist.main;
+
+/*
+ * 스프링 : 개발에 필요한 클래스 관리(복잡한 클래스 관리)
+ * 					--------
+ * 					컨테이너 : 클래스로 제작됨 :=> 가볍다
+ * 
+ */
+
+public class MainClass {
+	public static void main(String[] args) {
+		
+	}
+}

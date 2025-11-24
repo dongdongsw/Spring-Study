@@ -1,0 +1,11 @@
+package com.sist.dao;
+
+import java.util.List;
+
+import com.sist.vo.FoodVO;
+
+public class FoodDAO {
+	public List<FoodVO> foodListData(int start, int end){
+		
+	}
+}

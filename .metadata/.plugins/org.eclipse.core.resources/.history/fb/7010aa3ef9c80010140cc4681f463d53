@@ -1,0 +1,13 @@
+package com.sist.main2;
+
+
+import org.xml.sax.helpers.DefaultHandler;
+
+/*
+ * 	1. DOM => 메모리에 트리형태로 저장후 값 제어
+ * 	2. SAX
+ */
+
+public class XMLParse extends DefaultHandler{
+
+}

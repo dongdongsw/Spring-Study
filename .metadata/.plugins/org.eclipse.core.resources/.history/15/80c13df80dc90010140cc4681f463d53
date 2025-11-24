@@ -1,0 +1,16 @@
+package com.sist.mapper;
+
+import org.apache.ibatis.annotations.Select;
+
+public interface FoodMapper {
+
+	/*
+	 * @Insert <insert> => mapper.xml, Config.xml (x)
+	 * @Update <update>
+	 * @Delete <delete>
+	 * @Result <resultMap>
+	 * @Selectkey
+	 * ------------
+	 */
+	@Select("")
+}

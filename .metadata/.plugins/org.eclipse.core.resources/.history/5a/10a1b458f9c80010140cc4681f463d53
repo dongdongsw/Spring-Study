@@ -1,0 +1,15 @@
+package com.sist.main2;
+
+
+import org.xml.sax.helpers.DefaultHandler;
+
+/*
+ * 	1. DOM => 메모리에 트리형태로 저장후 값 제어
+ * 				수정 / 추가 / 읽기 / 삭제
+ * 				속도가 늦다
+ * 	2. SAX => 태그 한개씩 읽어서 데이터만 추출
+ */
+
+public class XMLParse extends DefaultHandler{
+
+}

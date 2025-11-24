@@ -1,0 +1,14 @@
+package com.sist.main;
+/*
+ *  DL	DI	AOP	=> MVC
+ * 					|
+ * 					web개발 (첨부된 라이브러리)
+ */
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

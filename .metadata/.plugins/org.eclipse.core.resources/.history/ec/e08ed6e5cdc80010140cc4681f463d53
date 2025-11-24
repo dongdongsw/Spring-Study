@@ -1,0 +1,9 @@
+package com.sist.main3;
+
+public class C {
+	@Override
+	public void print() {
+		
+		System.out.println("C:pring Call...");
+	}
+}

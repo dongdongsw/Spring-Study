@@ -1,0 +1,48 @@
+package com.sist.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/*
+ * application-context.xml
+ * application-datasource.xml
+ * application-security.xml
+ * application-websocket.xml
+ * 
+ * application-*.xml
+ * 
+ */
+
+public class MainClass {
+
+	public static void main(String[] args) {
+
+		String[] xml= {
+				"student-app.xml",
+				"member-app.xml",
+				"sawon-app.xml"
+				};
+		// ApplicationContext app = new ClassPathXmlApplicationContext(xml);
+		ApplicationContext app = new ClassPathXmlApplicationContext("*-app.xml");
+		Member m = (Member)app.getBean("mem");
+		System.out.println("번호 : " + m.getNo());
+		System.out.println("이름 : " + m.getName());
+		System.out.println("성별 : " + m.getSex());
+		
+		System.out.println();
+		
+		Student s = (Student)app.getBean("std");
+		System.out.println("번호 : " + s.getHakbun());
+		System.out.println("이름 : " + s.getName());
+		System.out.println("성별 : " + s.getSex());
+		
+		System.out.println();
+		
+		Sawon saw = (Sawon)app.getBean("sa");
+		System.out.println("번호 : " + saw.getSabun());
+		System.out.println("이름 : " + saw.getName());
+		System.out.println("성별 : " + saw.getSex());
+		
+	}
+
+}

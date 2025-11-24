@@ -1,0 +1,24 @@
+package com.sist.dao;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Select;
+
+import com.sist.vo.FoodVO;
+
+public class FoodDAO {
+	private void setMapper() {
+		// TODO Auto-generated method stub
+
+	}
+	/*
+	 @Select("SELECT fno, name, type, address, num "
+			+ "FROM(SELECT fno, name, type, address, rownum as num "
+			+ "FROM(SELECT fno, name, type, address "
+			+ "FROM menupan_food ORDER BY fno)) "
+			+ "WHERE num BETWEEN #{start} AND #{end}")
+	 */
+	public List<FoodVO> foodListData(int start, int end){
+		
+	}
+}

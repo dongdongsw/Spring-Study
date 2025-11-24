@@ -1,0 +1,6 @@
+package com.sist.main;
+
+public class Student {
+	private int hakbun;
+	private String name, sex;
+}

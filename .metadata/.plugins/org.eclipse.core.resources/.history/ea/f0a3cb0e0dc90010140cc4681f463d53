@@ -1,0 +1,8 @@
+package com.sist.vo;
+
+public class FoodVO {
+
+	private int fno;
+	private String type, address, name;
+	
+}

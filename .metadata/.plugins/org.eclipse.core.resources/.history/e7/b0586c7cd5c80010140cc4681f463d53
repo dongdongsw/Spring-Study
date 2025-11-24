@@ -1,0 +1,11 @@
+package com.sist.main;
+
+public class Sawon {
+	private int sabun;
+	private String name;
+	private String sex;
+	private String dept;
+	private String loc;
+	private int pay;
+	
+}

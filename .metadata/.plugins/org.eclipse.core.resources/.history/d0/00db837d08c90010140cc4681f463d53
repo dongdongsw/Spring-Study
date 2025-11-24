@@ -1,0 +1,22 @@
+package com.sist.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.sist.main.Student;
+
+@Configuration
+public class StudentConfig {
+	
+	@Bean("std")
+	public Student student() {
+		Student s = new Student();
+		
+		s.setHakbun(1);
+		s.setName("홍길동");
+		s.setSex("남자");
+		s.setSubject("컴퓨터");
+		
+		return s;
+	}
+}

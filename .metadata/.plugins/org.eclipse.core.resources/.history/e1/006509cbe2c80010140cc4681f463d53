@@ -1,0 +1,7 @@
+package com.sist.mapper;
+
+import java.util.*;
+
+public interface EmpMapper {
+
+}
