@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style type="text/css">
+.container {
+	margin-top: 50px;
+}
+
+.row {
+	margin: 0px auto;
+	width: 900px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">수정하기</h1>
+		<form action="update_ok.do?no=${vo.no }" method="post">
+			<div class="row">
+				<table class="table">
+					<tr>
+						<th class="text-center" width="20%">이름</th>
+						<td width="80%"><input type="text" name="name" size=20
+							class="input-sm" value="${vo.name }"></td>
+					</tr>
+					<tr>
+						<th class="text-center" width="20%">제목</th>
+						<td width="80%"><input type="text" name="subject" size=50
+							class="input-sm" value="${vo.subject}"></td>
+					</tr>
+					<tr>
+						<th class="text-center" width="20%">내용</th>
+						<td width="80%"><textarea rows="10" cols="50" name="content">${vo.content}</textarea>
+						</td>
+					</tr>
+					<tr>
+						<th class="text-center" width="20%">비밀번호</th>
+						<td width="80%"><input type="password" name="pwd" size=10
+							class="input-sm"></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="text-center">
+							<button class="btn-sm btn-primary" type="submit" >수정</button>
+							<button class="btn-sm btn-primary" type="button"
+								onclick="javascript:history.back()">취소</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

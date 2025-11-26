@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.sist.vo.RecipeVO;
 
-@Service
+
 public interface RecipeService {
 	
 	public List<RecipeVO> RecipeListData(Map map);
