@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="SpringFirstProject"/>
 <aop-project name="SpringAnnotationProject_1">
 <aspect-definition advice-class-name="com.sist.aop.MyDaoAOP" advice-method-name="disConnection" advice-type="AFTER" aspect-end-line-number="12" aspect-name="myDaoAOP" aspect-start-line-number="12" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/SpringAnnotationProject_1/src/main/java/application-context.xml" pointcut-expression="execution(* com.sist.dao.MyDAO.*(..))" proxy-target-class="false">
 <aop-reference advice-type="AFTER" bean="1:BeansModel|2:SpringAnnotationProject_1|3:src/main/java/application-context.xml|7:beans:10|8:dao:10" bean-file="/SpringAnnotationProject_1/src/main/java/application-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/SpringAnnotationProject_1/src/main/java/application-context.xml" source="=SpringAnnotationProject_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.sist.aop{MyDaoAOP.java[MyDaoAOP~disConnection" source-start-line="19" target="=SpringAnnotationProject_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.sist.dao{MyDAO.java[MyDAO~select" target-start-line="47"/>
@@ -19,8 +18,10 @@
 <aop-reference advice-type="BEFORE" bean="1:BeansModel|2:SpringAnnotationProject_1|3:src/main/java/application-context.xml|7:beans:10|8:dao:10" bean-file="/SpringAnnotationProject_1/src/main/java/application-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/SpringAnnotationProject_1/src/main/java/application-context.xml" source="=SpringAnnotationProject_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.sist.aop{MyDaoAOP.java[MyDaoAOP~getConnection" source-start-line="13" target="=SpringAnnotationProject_1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.sist.dao{MyDAO.java[MyDAO~disConnection" target-start-line="43"/>
 </aspect-definition>
 </aop-project>
-<aop-project name="SpringDIProject_5"/>
+<aop-project name="SpringFirstProject"/>
 <aop-project name="SpringDIProject_3"/>
+<aop-project name="SpringDIProject_5"/>
+<aop-project name="SpringMVCandFrontProject_1"/>
 <aop-project name="SpringMVCBoardProject"/>
 <aop-project name="SpringMVCProject_2"/>
 <aop-project name="SpringAnnotationProject"/>
