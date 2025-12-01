@@ -1,9 +1,0 @@
-package com.sist.main3;
-
-public class B {
-	@Override
-	public void print() {
-		
-		System.out.println("B:pring Call...");
-	}
-}
