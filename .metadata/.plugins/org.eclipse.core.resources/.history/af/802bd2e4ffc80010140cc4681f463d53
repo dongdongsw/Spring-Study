@@ -1,6 +1,0 @@
-package com.sist.main3;
-
-public class Student {
-	private int hakbun;
-	private Human hman = new Human();
-}

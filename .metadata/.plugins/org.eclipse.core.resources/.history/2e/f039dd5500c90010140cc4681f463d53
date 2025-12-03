@@ -1,5 +1,0 @@
-package com.sist.main3;
-
-public class Human {
-	private String name, sex, address, phone;
-}
