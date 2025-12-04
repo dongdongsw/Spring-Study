@@ -30,6 +30,45 @@ public class BoardServiceImpl implements BoardService{
 	public void boardInsert(BoardVO vo) {
 		bDao.boardInsert(vo);
 	}
+
+	@Override
+	public BoardVO boardDetailData(int no) {
+		// TODO Auto-generated method stub
+		return bDao.boardDetailData(no);
+	}
+
+	@Override
+	public String boardDelete(int no, String pwd) {
+		
+		String result="no";
+		String db_pwd = bDao.boardGetPassword(no);
+		if(db_pwd.equals(pwd)) {
+			result="yes";
+			bDao.boardDelete(no);
+		}
+		
+		
+		return result;
+	}
+
+	@Override
+	public String boardUpdate(BoardVO vo) {
+		
+		String result = "no";
+		String db_pwd = bDao.boardGetPassword(vo.getNo());
+		if(db_pwd.equals(vo.getPwd())) {
+			result="yes";
+			bDao.boardUpdate(vo);
+		}
+		
+		return result;
+	}
+
+	@Override
+	public BoardVO boardUpdateData(int no) {
+		// TODO Auto-generated method stub
+		return bDao.boardUpdateData(no);
+	}
 	
 
 	
